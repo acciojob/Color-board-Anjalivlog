@@ -1,1 +1,18 @@
 /*  your css code here. If applicable */
+.container {
+    display: grid;
+    grid-template-columns: repeat(40, 20px); /* 40 columns */
+    grid-template-rows: repeat(20, 20px); /* 20 rows */
+    gap: 1px; /* Gap between squares */
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc; /* Default color */
+}
+
+.square:hover {
+    background-color: #f00; /* Color on hover */
+    transition: background-color 1s; /* Smooth transition */
+}
